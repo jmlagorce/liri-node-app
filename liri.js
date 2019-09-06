@@ -25,7 +25,7 @@ if (process.argv[2] === "concert-this"){
 
             
             var m = moment(response.data[0].datetime).format('MMMM Do YYYY, h:mm:ss a');
-            console.log("Vanue name: " + response.data[0].venue.name);
+            console.log("Venue name: " + response.data[0].venue.name);
             console.log("Artist: " + response.data[0].lineup[0]);
             console.log("City: " + response.data[0].venue.city);
             console.log("State: " + response.data[0].venue.region);
